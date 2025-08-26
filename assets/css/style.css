@@ -41,7 +41,7 @@ img {
   display: none;
 }
 
-.flex, .section3 .box, .box_down .bottom, .section2 .box, .section2 .box_down, .boxes, .section1 .box, .discount, .showcase_top, .showcase_bottom, .header .header_top, .header .header_top .header_top_right, .header .header_top .header_top_left, .header .header_bottom, .header .header_bottom .header_bottom_left ul, .header .header_bottom .header_bottom_right button, .showcase_bottom_box, .showcase_bottom_box1, .showcase_bottom_box2, .showcase_bottom_box3, .showcase_bottom_box4 {
+.flex, .footer .footer_all, .footer_left ul, .section3 .box, .box_down .bottom, .section2 .box, .section2 .box_down, .boxes, .section1 .box, .discount, .showcase_top, .showcase_bottom, .header .header_top, .header .header_top .header_top_right, .header .header_top .header_top_left, .header .header_bottom, .header .header_bottom .header_bottom_left ul, .header .header_bottom .header_bottom_right button, .showcase_bottom_box, .showcase_bottom_box1, .showcase_bottom_box2, .showcase_bottom_box3, .showcase_bottom_box4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,6 +488,50 @@ img {
 @media (max-width: 1320px) {
   .boxes {
     flex-wrap: wrap;
+  }
+}
+.footer {
+  margin: 70px 0;
+}
+.footer .footer_all {
+  justify-content: space-between;
+  border-top: 1px solid #a7aed2;
+  padding: 50px 0;
+}
+.footer .footer_all .footer_right ul li p {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  color: #a7aed2;
+}
+.footer .footer_all .footer_right ul li a {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: right;
+  color: #303030;
+}
+
+.footer_left ul {
+  gap: 30px;
+}
+.footer_left ul li a {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #303030;
+}
+
+@media (max-width: 1060px) {
+  .footer_left ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 430px) {
+  .footer_all {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 

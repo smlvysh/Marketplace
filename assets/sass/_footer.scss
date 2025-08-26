@@ -1,0 +1,57 @@
+@use "./extend" as *;
+.footer {
+  margin: 70px 0;
+  .footer_all {
+    @extend .flex;
+    justify-content: space-between;
+    border-top: 1px solid #a7aed2;
+    padding: 50px 0;
+    .footer_right {
+      ul {
+        li {
+          p {
+            font-family: "Museo Sans Cyrl", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            text-align: right;
+            color: #a7aed2;
+          }
+          a {
+            font-family: "Museo Sans Cyrl", sans-serif;
+            font-weight: 600;
+            font-size: 22px;
+            text-align: right;
+            color: #303030;
+          }
+        }
+
+        
+      }
+    }
+  }
+}
+.footer_left {
+          ul {
+            @extend .flex;
+            gap: 30px;
+            li {
+              a {
+                font-family: "Museo Sans Cyrl", sans-serif;
+                font-weight: 400;
+                font-size: 22px;
+                color: #303030;
+              }
+            }
+          }
+        }
+        @media(max-width:1060px){
+            .footer_left ul{
+                flex-direction: column;
+            }
+        }
+        @media(max-width:430px){
+            .footer_all{
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
