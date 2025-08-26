@@ -1,6 +1,10 @@
 @use"./extend" as *;
-.section2{
+
+.section3{
      margin: 50px 0;
+     .boxes{
+        padding-top: 50px;
+     }
     .box{
         width: 250px;
 height: 386px;
@@ -29,13 +33,29 @@ color: #303030;
 }
 }
     }
-
+}
 .box_down{
+
+    p{
+        font-family: "Museo Sans Cyrl", sans-serif;
+font-weight: 400;
+font-size: 18px;
+text-decoration: line-through;
+color: #d6d5d5;
+    }
+
+   .bottom{
     @extend .flex;
     justify-content: space-between;
     gap: 10px;
+    h2{
+        font-family: "Museo Sans Cyrl", sans-serif;
+font-weight: 700;
+font-size: 24px;
+color: #ff3d3d;
+    }
     button{
-          border: 1.50px solid #46c578;
+        border: 1.50px solid #46c578;
 border-radius: 10px;
 width: 120px;
 height: 40px;
@@ -46,10 +66,7 @@ font-size: 15px;
 text-align: center;
 color: #fff;
     }
-}}
-.boxes{
-    @extend .flex;
-    gap: 50px;
+   }
 }
 @media(max-width:1320px){
     .boxes{
