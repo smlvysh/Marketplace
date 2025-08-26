@@ -1,0 +1,58 @@
+@use"./extend" as *;
+.section2{
+     margin: 50px 0;
+    .box{
+        width: 250px;
+height: 386px;
+@extend .flex;
+flex-direction: column;
+gap: 60px;
+.box_up{
+h3{
+    font-family: "Museo Sans Cyrl", sans-serif;
+font-weight: 700;
+font-size: 18px;
+color: #000;
+}}
+.green{
+    font-family: "Museo Sans Cyrl", sans-serif;
+font-weight: 400;
+font-size: 15px;
+line-height: 1.25;
+color: #46c578;
+p{
+  font-family: "Museo Sans Cyrl", sans-serif;
+font-weight: 400;
+font-size: 15px; 
+line-height: 1.25;
+color: #303030;
+}
+}
+    }
+}
+.box_down{
+    @extend .flex;
+    justify-content: space-between;
+    gap: 10px;
+    button{
+          border: 1.50px solid #46c578;
+border-radius: 10px;
+width: 120px;
+height: 40px;
+background: #46c578;
+font-family: "Museo Sans Cyrl", sans-serif;
+font-weight: 400;
+font-size: 15px;
+text-align: center;
+color: #fff;
+    }
+}
+.boxes{
+    @extend .flex;
+    gap: 50px;
+}
+@media(max-width:1320px){
+    .boxes{
+        flex-wrap: wrap;
+    }
+}

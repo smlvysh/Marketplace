@@ -41,7 +41,7 @@ img {
   display: none;
 }
 
-.flex, .section1 .box, .box_down .bottom, .discount, .boxes, .showcase_top, .showcase_bottom, .header .header_top, .header .header_top .header_top_right, .header .header_top .header_top_left, .header .header_bottom, .header .header_bottom .header_bottom_left ul, .header .header_bottom .header_bottom_right button, .showcase_bottom_box, .showcase_bottom_box1, .showcase_bottom_box2, .showcase_bottom_box3, .showcase_bottom_box4 {
+.flex, .section2 .box, .box_down, .boxes, .section1 .box, .box_down .bottom, .discount, .showcase_top, .showcase_bottom, .header .header_top, .header .header_top .header_top_right, .header .header_top .header_top_left, .header .header_bottom, .header .header_bottom .header_bottom_left ul, .header .header_bottom .header_bottom_right button, .showcase_bottom_box, .showcase_bottom_box1, .showcase_bottom_box2, .showcase_bottom_box3, .showcase_bottom_box4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,6 +360,62 @@ img {
 
 .boxes {
   gap: 70px;
+}
+
+@media (max-width: 1320px) {
+  .boxes {
+    flex-wrap: wrap;
+  }
+}
+.section2 {
+  margin: 50px 0;
+}
+.section2 .box {
+  width: 250px;
+  height: 386px;
+  flex-direction: column;
+  gap: 60px;
+}
+.section2 .box .box_up h3 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+.section2 .box .green {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.25;
+  color: #46c578;
+}
+.section2 .box .green p {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.25;
+  color: #303030;
+}
+
+.box_down {
+  justify-content: space-between;
+  gap: 10px;
+}
+.box_down button {
+  border: 1.5px solid #46c578;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  background: #46c578;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.boxes {
+  gap: 50px;
 }
 
 @media (max-width: 1320px) {
