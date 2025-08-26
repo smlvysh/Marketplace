@@ -3,3 +3,14 @@
     justify-content: center;
     align-items: center;
 }
+
+.showcase_bottom_box{
+    border-radius: 12px;
+width: 380px;
+height: 260px;
+@extend .flex;
+flex-direction: column;
+gap: 10px;
+align-items: start;
+padding: 20px;
+}
